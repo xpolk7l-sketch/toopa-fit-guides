@@ -1,0 +1,17 @@
+node_modules
+.output
+.cache
+dist
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+npm-debug.log
+README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+tsconfig.tsbuildinfo
+.vscode
+.idea
