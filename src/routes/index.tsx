@@ -167,6 +167,7 @@ function HomePage() {
                   السلة
                 </Link>
               </div>
+              </div>
             </article>
           ))}
         </div>
