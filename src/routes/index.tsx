@@ -62,10 +62,15 @@ function HomePage() {
                 <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-[var(--accent-orange)]/20 blur-3xl" />
                 <div className="relative space-y-4">
                   {PRODUCTS.map((p) => (
-                    <div key={p.id} className="flex items-center gap-3 rounded-xl border border-border bg-background/60 p-3">
-                      <div className={`grid h-12 w-12 shrink-0 place-items-center rounded-lg ${p.accent === "brand" ? "btn-brand" : "btn-orange"}`}>
-                        <BookOpen className="h-5 w-5" />
-                      </div>
+                    <div key={p.id} className="flex items-center gap-3 rounded-xl border border-border bg-background/60 p-2">
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        width={64}
+                        height={64}
+                        loading="lazy"
+                        className="h-16 w-16 shrink-0 rounded-lg object-cover"
+                      />
                       <div className="min-w-0 flex-1">
                         <div className="truncate text-sm font-bold">{p.title}</div>
                         <div className="text-xs text-muted-foreground">دليل PDF احترافي</div>
