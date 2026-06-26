@@ -58,15 +58,15 @@
   --popover: oklch(0.21 0.014 160);
   --popover-foreground: oklch(0.97 0.005 120);
 
-  /* Green primary */
-  --primary: oklch(0.74 0.17 150);
+  /* Neon green primary (#00FF88) */
+  --primary: #00ff88;
   --primary-foreground: oklch(0.15 0.02 160);
-  --brand: oklch(0.74 0.17 150);
+  --brand: #00ff88;
   --brand-foreground: oklch(0.15 0.02 160);
-  --brand-soft: oklch(0.74 0.17 150 / 0.12);
+  --brand-soft: color-mix(in oklab, #00ff88 14%, transparent);
 
-  /* Orange accent */
-  --accent-orange: oklch(0.76 0.17 55);
+  /* Orange accent (#FF7A00) */
+  --accent-orange: #ff7a00;
   --accent-orange-foreground: oklch(0.18 0.02 50);
 
   --secondary: oklch(0.27 0.015 160);
@@ -81,14 +81,14 @@
 
   --border: oklch(0.3 0.012 160 / 0.6);
   --input: oklch(0.28 0.012 160);
-  --ring: oklch(0.74 0.17 150 / 0.6);
+  --ring: color-mix(in oklab, #00ff88 60%, transparent);
 
-  --gradient-hero: radial-gradient(1200px 600px at 80% -10%, oklch(0.74 0.17 150 / 0.25), transparent 60%),
-    radial-gradient(900px 500px at 0% 10%, oklch(0.76 0.17 55 / 0.18), transparent 60%),
+  --gradient-hero: radial-gradient(1200px 600px at 80% -10%, color-mix(in oklab, #00ff88 22%, transparent), transparent 60%),
+    radial-gradient(900px 500px at 0% 10%, color-mix(in oklab, #ff7a00 16%, transparent), transparent 60%),
     linear-gradient(180deg, oklch(0.16 0.012 160), oklch(0.13 0.012 160));
-  --gradient-brand: linear-gradient(135deg, oklch(0.74 0.17 150), oklch(0.78 0.15 130));
-  --gradient-orange: linear-gradient(135deg, oklch(0.78 0.18 60), oklch(0.7 0.2 40));
-  --shadow-glow: 0 20px 60px -20px oklch(0.74 0.17 150 / 0.4);
+  --gradient-brand: linear-gradient(135deg, #00ff88, #22d39a);
+  --gradient-orange: linear-gradient(135deg, #ff9a3c, #ff5a1f);
+  --shadow-glow: 0 20px 60px -20px color-mix(in oklab, #00ff88 40%, transparent);
   --shadow-card: 0 10px 30px -10px oklch(0 0 0 / 0.5);
 }
 
