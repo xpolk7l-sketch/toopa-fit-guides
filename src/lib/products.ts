@@ -6,6 +6,7 @@ export type Product = {
   highlights: string[];
   badge: string;
   accent: "brand" | "orange";
+  image: string;
 };
 
 export const PRODUCTS: Product[] = [
@@ -17,6 +18,7 @@ export const PRODUCTS: Product[] = [
     price: 59,
     badge: "الأكثر طلباً",
     accent: "brand",
+    image: "/images/cutting-guide.jpg",
     highlights: [
       "خطة تغذية يومية مدروسة لمدة 8 أسابيع",
       "أكثر من 40 وصفة صحية بسعرات محسوبة",
@@ -32,6 +34,7 @@ export const PRODUCTS: Product[] = [
     price: 59,
     badge: "موصى به",
     accent: "orange",
+    image: "/images/bulking-guide.jpg",
     highlights: [
       "خطة تضخيم مرحلية لمدة 12 أسبوعاً",
       "وصفات طاقة عالية البروتين والكربوهيدرات",
@@ -49,7 +52,7 @@ export const BUSINESS = {
   email: "toopa.support@gmail.com",
   phone: "+966554305391",
   whatsapp: "+966554305391",
-  location: "الرياض، المملكة العربية السعودية",
+  location: "جدة، المملكة العربية السعودية",
   currency: "ر.س",
 };
 
