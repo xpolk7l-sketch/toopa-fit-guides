@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.7
 
 # ---------- Builder ----------
-FROM oven/bun:1.1-alpine AS builder
+FROM oven/bun:1.2-alpine AS builder
 WORKDIR /app
 
 # Install deps (cached layer)
