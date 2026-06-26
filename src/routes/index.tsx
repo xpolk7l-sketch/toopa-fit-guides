@@ -121,7 +121,19 @@ function HomePage() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {PRODUCTS.map((p) => (
-            <article key={p.id} className="surface-card relative flex flex-col p-6">
+            <article key={p.id} className="surface-card relative flex flex-col overflow-hidden">
+              <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-border/60">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  width={1024}
+                  height={768}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-500 hover:scale-105"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
               <div className="flex items-start justify-between gap-3">
                 <span className={`chip ${p.accent === "orange" ? "!bg-[var(--accent-orange)]/15 !text-[var(--accent-orange)] !border-[var(--accent-orange)]/40" : ""}`}>
                   {p.badge}
