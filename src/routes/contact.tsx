@@ -48,7 +48,7 @@ function ContactPage() {
         <div>
           <h3 className="text-base font-extrabold">موقعنا</h3>
           <p className="mt-1 text-sm text-muted-foreground">{BUSINESS.location}</p>
-          <p className="mt-3 text-xs text-muted-foreground">ساعات الدعم: من السبت إلى الخميس، 9 صباحاً – 9 مساءً بتوقيت الرياض.</p>
+          <p className="mt-3 text-xs text-muted-foreground">ساعات الدعم: من السبت إلى الخميس، 9 صباحاً – 9 مساءً بتوقيت جدة.</p>
         </div>
       </div>
     </div>
